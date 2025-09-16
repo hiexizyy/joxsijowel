@@ -3,57 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joel's Portofolio</title>
-
-    <!--style--> <style></style>
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Joel's Portfolio</title>
 </head>
-<body style="padding: 10px;"s>
-    <h1>PORTOFOLIO</h1>
-    <ul>
-        <li>
-            <a href="#Home">Home</a>
-        </li>
-    </ul>
-    <ul>
-        <li>
-            <a href="#About">About</a>
-        </li>
-    </ul>
-    <ul>
-        <li>     
-        <a href="#Contact">Contact</a></li>     
-        </li>
-    </ul>
+<body>
 
-    </p>
-    <hr>
-    <img src="img/mygweh.png" alt="Jox aja" style="width: 12rem;height: auto;">
-    <h3>Joel Daniel Mark Wenas</h3>
-    <dl>
-            <dt>Joel merupakan seorang mahasiswa UPH, yang mengambil jurusan Informatika.</dt>
-        </dl>
+    <header>
+        <div class="logo">
+            <a href="#">◆ hiexi</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact-button">
+            <a href="#contact">ikuzo omae!</a>
+        </div>
+    </header>
 
-   <!-- end of heading and paragraph-->
-    <!--hyperlink-->
-    <hr>
-    <p><strong>Projects List: </strong></p>
-        <div style="display: flex; flex-direction: row; justify-content:space-evenly; height: 2rem; padding-top: 10%;">
-        <span><a href="https://www.figma.com/proto/ujDaobrdV2Ehk6uMpjmWvG/Res-trun-rant---The-Rise-of-Cakaliardo--de-Flambe?node-id=3-3&starting-point-node-id=3%3A3&t=evJ4paV08ILXjwzd-1" target="_blank">Project 1</a></span>
-        <span><a href="https://github.com/hiexizyy/exercise-flexbox" target="_blank">Project 2</a></span>
-        <span><a href="https://github.com/hiexizyy/joxsijowel" target="_blank">Project 3</a></span>
-    </div>
-    <hr>
-     
-    <h4>Contacts: </h4>
-     <div style="display: flex; flex-direction: row; justify-content:space-evenly; height: 2rem; padding-top: 10%;">
-        <span><a href="https://www.instagram.com/joelldmw">Instagram</a></span>
-        <span><a href="https://discord.gg/2MrQXGMN">Evo</a></span>
-        <span><a href="https://github.com/hiexizyy/joxsijowel">Github</a></span>
-    </div>
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-text">
+                <h1><span class="highlight">Joel Daniel Mark Wenas</span></h1>
+                <p>A student at UPH, with the major of Informatics. Have been trying to do a thing or two about programming, yet cant seem to have a good progress.</p>
+                <div class="awards">
+                    <span>🏆 #1 ZZZ Glazer</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/mygweh.png" alt="A picture of Joel Daniel">
+            </div>
+        </section>
 
+        <section id="projects" class="projects-section">
+            <h2>Project List</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image-placeholder"></div>
+                    <h3>Restaurant UI/UX</h3>
+                    <p>Perlakuan abang-abang Rest-our-rant.</p>
+                    <a href="https://www.figma.com/proto/ujDaobrdV2Ehk6uMpjmWvG/Res-trun-rant---The-Rise-of-Cakaliardo--de-Flambe?node-id=3-3&starting-point-node-id=3%3A3&t=evJ4paV08ILXjwzd-1" target="_blank">View Design</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image-placeholder"></div>
+                    <h3>Exercise-Flexbox</h3>
+                    <p>Repository baru mengenai pembuatan listing-price.</p>
+                    <a href="https://github.com/hiexizyy/exercise-flexbox" target="_blank">GitHub</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image-placeholder"></div>
+                    <h3>Personal Repository</h3>
+                    <p>Repository pribadi, tidak punya isi dan konten yang banyak, sekedar repository biasa.</p>
+                    <a href="https://github.com/hiexizyy/joxsijowel" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
 
-<!--script--> 
-    <script></script>   
-    </body>
-    </html>
+        <section id="contact" class="contact-section">
+            <h2>Contacts</h2>
+            <p>Find me on the following platforms:</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/joelldmw" target="_blank">Instagram</a>
+                <a href="https://discord.gg/2MrQXGMN" target="_blank">Discord (Evo)</a>
+                <a href="https://github.com/hiexizyy" target="_blank">Github</a>
+            </div>
+        </section>
+        
+    </main>
+
+</body>
+</html>
