@@ -117,6 +117,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap; /* Added for better responsiveness */
 }
 
 .project-card {
@@ -217,7 +218,4 @@ main {
         flex-direction: column;
         align-items: center;
     }
-
-
-
 }
